@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CRAS+ | Apoio Social e Solidariedade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <h1>CRAS<span>+</span></h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre o CRAS</a></li>
+                    <li><a href="#campanhas">Campanhas</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Rede de Apoio Social</span>
+                    <h2>Tecnologia e Solidariedade<br>Transformando Vidas</h2>
+                    <p>Uma plataforma desenvolvida para conectar a comunidade aos serviços do CRAS, promovendo cidadania, inclusão digital e fortalecimento dos vínculos comunitários.</p>
+                    <div class="hero-buttons">
+                        <a href="#campanhas" class="btn btn-primary"><i class="fas fa-heart"></i> Participar</a>
+                        <a href="#contato" class="btn btn-outline"><i class="fas fa-envelope"></i> Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destaques / Stats -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>+2.500</h3>
+                    <p>Famílias atendidas</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>+180</h3>
+                    <p>Eventos realizados</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-hands"></i>
+                    <h3>+45</h3>
+                    <p>Campanhas solidárias</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-city"></i>
+                    <h3>12</h3>
+                    <p>Comunidades atendidas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre o CRAS -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Institucional</span>
+                    <h2>Sobre o CRAS</h2>
+                    <p>Conheça nossa missão e como atuamos para fortalecer a assistência social</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>O Centro de Referência de Assistência Social (CRAS) é a principal porta de entrada para a Política Nacional de Assistência Social no Brasil. Atuamos diretamente nas comunidades para prevenir situações de risco, fortalecer vínculos familiares e promover a cidadania.</p>
+                        <p>Nossa plataforma digital foi desenvolvida para ampliar o alcance das ações sociais, facilitar a comunicação com a comunidade e garantir que as informações sobre benefícios, programas e campanhas cheguem a todos de forma rápida e acessível.</p>
+                        <div class="about-features">
+                            <div><i class="fas fa-check-circle"></i> Proteção Social Básica</div>
+                            <div><i class="fas fa-check-circle"></i> Fortalecimento de Vínculos</div>
+                            <div><i class="fas fa-check-circle"></i> Inclusão Digital</div>
+                            <div><i class="fas fa-check-circle"></i> Transparência e Acesso</div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <i class="fas fa-hands-helping"></i>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campanhas Solidárias -->
+        <section id="campanhas" class="campaigns">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Ações Solidárias</span>
+                    <h2>Campanhas em Destaque</h2>
+                    <p>Participe das nossas iniciativas e faça a diferença na sua comunidade</p>
+                </div>
+                <div class="campaigns-grid" id="campaignsContainer">
+                    <!-- Campaigns will be loaded dynamically via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Programas Sociais -->
+        <section id="programas" class="programs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Benefícios e Serviços</span>
+                    <h2>Programas Sociais</h2>
+                    <p>Conheça os programas disponíveis e saiba como acessar seus direitos</p>
+                </div>
+                <div class="programs-grid" id="programsContainer">
+                    <!-- Programs loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Eventos Comunitários -->
+        <section id="eventos" class="events">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Agenda Comunitária</span>
+                    <h2>Eventos e Palestras</h2>
+                    <p>Participe das atividades promovidas pelo CRAS e fortaleça sua rede de apoio</p>
+                </div>
+                <div class="events-grid" id="eventsContainer">
+                    <!-- Events loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios Sociais (Info Box) -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-card">
+                    <div class="benefits-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="benefits-content">
+                        <h3>Benefícios e Direitos Sociais</h3>
+                        <p>O CRAS oferece orientação sobre Benefício de Prestação Continuada (BPC), Bolsa Família, auxílio-doença, carteira do idoso e outros direitos. Entre em contato para agendar um atendimento e saber mais sobre os critérios de participação.</p>
+                        <a href="#contato" class="btn btn-secondary">Solicitar informações <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2>Entre em Contato</h2>
+                    <p>Dúvidas, sugestões ou solicitações? Estamos aqui para ajudar</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Av. Brasil, 123 - Centro, Manaus - AM, CEP: 69057-510</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(92) 3305-1800</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>contato@crasmais.org.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Atendimento</h4>
+                                <p>Segunda a Sexta: 8h às 17h</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Telefone (opcional)">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject">
+                                <option value="">Assunto...</option>
+                                <option value="duvida">Dúvida sobre programas</option>
+                                <option value="campanha">Participar de campanha</option>
+                                <option value="evento">Inscrição em evento</option>
+                                <option value="sugestao">Sugestão</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Enviar mensagem <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <h2>CRAS<span>+</span></h2>
+                    </div>
+                    <p>Tecnologia e assistência social unidas para fortalecer a cidadania e promover a inclusão digital nas comunidades.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#campanhas">Campanhas</a></li>
+                        <li><a href="#programas">Programas</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Benefícios Sociais</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Legislação (SUAS)</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Fique por dentro</h4>
+                    <p>Receba novidades sobre campanhas e eventos</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CRAS+ - Plataforma de Apoio Social. Desenvolvido com <i class="fas fa-heart"></i> para fortalecer a assistência social e promover a cidadania.</p>
+                <p class="footer-small">Baseado no Projeto Integrador - Centro Universitário ESBAM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
